@@ -1,0 +1,766 @@
+body {
+    margin: 0;
+    font-family: Roboto Condensed, sans-serif;
+    background-color: rgb(170, 170, 169);
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* HEADER */
+  .bannertitulo {
+    background-image: linear-gradient(90deg, #1d71b8 0%, #003595 100%);
+    height: 150px;
+    color: #ffffff;
+  }
+  
+  .row {
+    display: flex;
+    max-width: 1080px;
+    margin: auto;
+    height: 150px;
+  }
+  
+  .titulo {
+    font-weight: "ROBOTO CONDENSED ";
+    font-size: xx-large;
+    width: 100%;
+    padding: 15px 0 0 10px;
+  }
+  
+  .containersubtitulo {
+    background-image: linear-gradient(90deg, #003595 0%, #1d71b8 100%);
+    height: 30px;
+    margin-top: -30px;
+  }
+  
+  .rowcontainer {
+    background-image: linear-gradient(90deg, #003595 0%, #1d71b8 100%);
+    height: 30px;
+  }
+  
+  .subtitulo {
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 7px;
+    font-size: 12px;
+    letter-spacing: 23px;
+    text-align: center;
+    margin-left: 15%;
+    /* transition: all 0.3s; */
+  }
+  
+  .menu {
+    background: #b89d2b;
+    color: #ffffff;
+    height: 40px;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu ul {
+    display: flex;
+    height: 40px;
+    max-width: 1080px;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    border-right: 1px solid #ffffff;
+    font-size: 14px;
+  }
+  
+  .menu ul li:nth-child(1) {
+    border-left: 1px solid #ffffff;
+  }
+  
+  .menu ul li:hover {
+    background: #ad9716;
+    cursor: pointer;
+  }
+  
+  /* Banner de la página */
+ /* Banner */
+.banner {
+  width: 100%;
+  height: 300px;
+  background-image: url("images/FB_IMG_1718763812201.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: antiquewhite;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center;    /* Centra el texto verticalmente */
+  text-align: center;     /* Alinea el texto al centro */
+}
+
+.banner-text {
+  color: white; /* Color del texto */
+  font-size: 1.8rem; /* Tamaño del texto */
+  font-weight: bold; /* Negrita para destacar */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */
+  line-height: 1.5; /* Espaciado entre líneas */
+  background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente detrás del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+  /* Estilo para el contenido de las noticias */
+  /* Estilo general */
+  .historial-noticias {
+    text-align: center; /* Centra el título y el contenido */
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .titulo-central {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Contenedor de noticias */
+  .noticias {
+    display: flex;
+    justify-content: center; /* Centra las noticias horizontalmente */
+    gap: 20px; /* Espaciado entre las noticias */
+    flex-wrap: wrap; /* Permite que las noticias se ajusten en varias filas */
+  }
+  
+  /* Cada noticia */
+  .noticia {
+    width: 250px; /* Tamaño del contenedor de cada noticia */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Imagen circular */
+  .noticia img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    border-radius: 50%; /* Convierte la imagen en un círculo */
+    margin: 0 auto 10px; /* Centra la imagen */
+    display: block;
+    border: 3px solid #ddd; /* Borde opcional */
+  }
+  
+  /* Texto de la noticia */
+  .texto-noticia p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .texto-noticia a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .texto-noticia a:hover {
+    color: #0056b3;
+  }
+  
+  
+  /* Sección de Oferta Educativa */
+  .oferta-educativa {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Sección de Redes Sociales */
+  .redes-sociales {
+    text-align: center; /* Centra el contenido */
+    background-color: #f4f4f4; /* Fondo suave */
+    padding: 30px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px auto; /* Centra la sección en la página */
+    max-width: 600px; /* Ancho máximo de la sección */
+  }
+  
+  /* Estilo del título */
+  .titulo-redes {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  }
+  
+  /* Estilo de la descripción */
+  .descripcion-redes {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de los iconos */
+  .redes {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente los iconos */
+    gap: 20px; /* Espaciado entre los iconos */
+  }
+  
+  /* Estilo de los iconos */
+  .redes a img {
+    width: 60px; /* Tamaño uniforme de los iconos */
+    height: 60px;
+    border-radius: 50%; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al pasar el cursor */
+  }
+  
+  /* Efecto hover para los iconos */
+  .redes a img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del icono */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el cursor */
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 480px) {
+    .redes-sociales {
+        padding: 20px 10px;
+    }
+  
+    .redes a img {
+        width: 50px;
+        height: 50px;
+    }
+  }
+  
+  /* Mapa de Google */
+  
+  .mapa-contacto {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  /* Estilo del título */
+  .mapa-contacto h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor principal para mapa e información */
+  .contenido-contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Contenedor del mapa */
+  .mapa-container {
+    flex: 1;
+    min-width: 300px;
+    height: 350px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Contenedor de la información */
+  .info-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Estilo del texto de contacto */
+  .info-contacto {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Estilo del mensaje adicional */
+  .mensaje-contacto {
+    margin-top: 0; /* Elimina cualquier espacio adicional superior */
+    font-style: "roboto condensed";
+    color: #333;
+  }
+  
+  
+  
+  .video-container {
+    display: flex;
+    justify-content: center; /* Centra el video horizontalmente */
+    align-items: center; /* Centra el video verticalmente */
+    margin: auto;
+  }
+  
+  
+  iframe {
+    width: 1170px; /* Ancho del video */
+    height: 523px; /* Alto del video */
+    max-width: 90%; /* Asegura que el video no sea demasiado grande en pantallas más pequeñas */
+    max-height: 80%; /* Limita la altura del video */
+  }
+  
+  
+  .Anuncios {
+    text-align: center; /* Centra todo el contenido del texto dentro de la sección */
+    margin: 0 auto; /* Centra la sección en caso de que tenga un ancho específico */
+  }
+  
+  .Anuncios img {
+    display: block; /* Cambia el modo de la imagen para que se comporte como un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+  }
+  
+  /* Centrar texto del párrafo */
+  .Anuncios p {
+    text-align: center; /* Centra el texto */
+    line-height: 1.6; /* Ajusta el interlineado para mejor legibilidad */
+    margin: 0 auto; /* Asegura márgenes simétricos */
+    max-width: 600px; /* Limita el ancho para evitar líneas muy largas */
+  }
+  
+  .Anuncios h1 {
+    font-size: 2.5em; /* Tamaño más grande para destacar */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    color: #003595; /* Color llamativo (puedes ajustarlo según prefieras) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+    margin-bottom: 0.5em; /* Espaciado inferior */
+  }
+  
+  /* Estilo para el subtítulo (h2) */
+  .Anuncios h2 {
+    font-size: 1.8em; /* Un poco más pequeño que h1 */
+    font-weight: 600; /* Negrita moderada */
+    color: #333; /* Color más discreto */
+    margin-top: 0; /* Reduce el espacio entre h1 y h2 */
+  }
+  
+  
+  .btn {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #b89d2b;
+    border-radius: 80px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  /* Efecto cuando el enlace se pasa por encima (hover) */
+  .btn:hover {
+    background-color: #ad9716;
+    cursor: pointer;
+    transform: translateY(-5px);
+  }
+  
+  .btn:active,
+  .texto-noticia a:active {
+    transform: translateY(0px);
+  }
+  
+  /* HAMBURGUER */
+  
+  #menuToggle {
+    margin-top: 100px;
+    display: none;
+  }
+  
+  #checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    height: calc(4px * 3 + 11px * 2);
+  }
+  
+  .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: calc(4px / 2);
+    background: #f1ebd5;
+    color: inherit;
+    opacity: 1;
+    transition: none 0.35s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+  }
+  
+  .bar--arriba {
+    bottom: calc(50% + 11px + 4px / 2);
+    transition-property: bottom, transform;
+    transition-delay: calc(0s + 0.35s) * 0.6;
+  }
+  
+  .bar--medio {
+    top: calc(50% - 4px / 2);
+    transition-property: opacity, transform;
+    transition-delay: calc(0s + 0.35s * 0.3);
+  }
+  
+  .bar--abajo {
+    top: calc(50% + 11px + 4px / 2);
+    transition-property: top, transform;
+    transition-delay: 0s;
+  }
+  
+  #checkbox:checked + .toggle .bar--arriba {
+    transform: rotate(-135deg);
+    transition-delay: 0s;
+    bottom: calc(50% - 4px / 2);
+  }
+  
+  #checkbox:checked + .toggle .bar--medio {
+    opacity: 0;
+    transform: rotate(-135deg);
+    transition-delay: calc(0s + 0.35s * 0.3);
+  }
+  
+  #checkbox:checked + .toggle .bar--abajo {
+    top: calc(50% - 4px / 2);
+    transform: rotate(-225deg);
+    transition-delay: calc(0s + 0.35s * 0.6);
+  }
+  
+  /*! Inicia el responsive */
+  @media only screen and (max-width: 1080px) {
+    .subtitulo {
+      letter-spacing: 2vw;
+      font-size: 1vw;
+    }
+  
+    .titulo {
+      font-size: x-large;
+    }
+  }
+  
+  @media only screen and (max-width: 920px) {
+    .subtitulo {
+      margin-left: 18%;
+    }
+    .menu ul li {
+      font-size: 12px;
+      padding: 13px 30px;
+    }
+  }
+  @media only screen and (max-width: 810px) {
+    .subtitulo {
+      margin-left: 23%;
+      letter-spacing: 1.5vw;
+      font-size: 1.5vw;
+    }
+  
+    .menu ul li {
+      font-size: 10px;
+    }
+  
+    .titulo {
+      font-size: 2.5vw;
+      padding: 15px 0 0 5vw;
+    }
+  }
+  
+  @media only screen and (max-width: 690px) {
+    .bannertitulo {
+      height: 190px;
+    }
+  
+    .imgUAS {
+      height: 35%;
+    }
+  
+    .imgVision,
+    .imgFacultad {
+      height: 25%;
+      margin-top: 19px;
+    }
+  
+    .titulo {
+      align-self: center;
+      position: absolute;
+      font-size: 15px;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .row img:nth-child(3) {
+      order: 3; 
+    }
+    
+  
+    .containersubtitulo {
+      background: #b89d2b;
+      height: 20%;
+      margin-top: -190px;
+    }
+  
+    .row {
+      height: 190px;
+      justify-content: center;
+      align-items: stretch;
+    }
+  
+    .rowcontainer {
+      display: none;
+    }
+  
+    .banner {
+        height: 300px;
+      
+    }
+  
+    .menu {
+      height: 0;
+      display: none;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      width: fit-content;
+      position: relative;
+    }
+  
+    .menu ul li {
+      border-right: none;
+      background: #dbc023;
+      text-align: center;
+      height: 10px;
+      padding: 0;
+    }
+  
+    .menu ul li:nth-child(1) {
+      border-left: none;
+      margin-top: 20px;
+    }
+  
+    .noticia{
+      max-height: 250px;
+    }
+  
+    .texto-noticia p:nth-child(1){
+      font-size: x-small;
+    }
+  
+    .texto-noticia p:nth-child(2){
+      font-size: xx-small;
+    }
+  
+    .texto-noticia a {
+      padding: 5px 10px;
+      font-size: xx-small;
+    }
+  
+    #menuToggle {
+      display: block;
+    }
+  }
+  
+  .bodyContainer{
+    background-color: #ffffff;
+    max-width: 1080px;
+    height:auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 10px;
+  
+  }
+  
+  .NoticiasContainer {
+    background-color: #ffffff;
+    max-width: 1080px;
+    display: flex;
+    margin: auto;
+  }
+  
+  
+  
+  footer {
+    background-color: #f1ebd5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  footer img {
+    height: 60px; /* Ajusta la altura de las imágenes a 60px */
+    
+  }
+  footer p {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .historial-noticias {
+    text-align: center;
+    background: #ffffff;
+    padding: 10px;
+  }
+  
+  .noticias {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 20px;
+  }
+  
+  .noticia {
+    width: 25%;
+    max-height: 350px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .noticia img {
+    width: 75%;
+    height: 50%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .texto-noticia {
+    width: 75%;
+    height: 50%;
+    background-color: rgb(214, 207, 177, 0.8);
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  
+  .texto-noticia a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #1d71b8;
+    border-radius: 80px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    width: max-content;
+  }
+  
+  
+/* Estilos Generales */
+.anuncios {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Roboto Condensed, sans-serif;
+    color: #333;
+}
+
+.content-box {
+    max-width: 900px;
+    margin: auto;
+}
+
+.content-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0056b3;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.slider .slide {
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider .slide.active {
+    display: block;
+}
+
+.slide h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #0056b3;
+    text-align: center;
+}
+
+.slide .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.slide .content img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slide .content p {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Controles */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #003d80;
+}
